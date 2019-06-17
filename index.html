@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css?family=Coiny&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/media.css">
+    <title>Tic-tac-toe</title>
+</head>
+<body>
+    <div class="container">
+        <div id="startGame">
+            <h1 class="animation-text">Tic-tac-toe</h1>
+            <button class="btn animation-btn" onclick="showFieldGame()">start<span></span><span></span><span></span><span></span></button>
+        </div>
+        <ul class="animation-background">
+            <li>x</li>
+            <li>o</li>
+            <li>x</li>
+            <li>o</li>
+            <li>x</li>
+        </ul>
+        <div id='fildGame' class="fildGame">  
+            <table id="game" class="tic-tac-toe">
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        <button id='restart' class="btn animation-btn">restart<span></span><span></span><span></span><span></span></button>
+        </div>        
+    </div>
+<script src="js/general.js"></script>
+<script src="js/game.js"></script>
+</body>
+</html>

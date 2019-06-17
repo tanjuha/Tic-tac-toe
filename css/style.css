@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    font-family: 'Coiny', cursive;
+    background: #14bdac; 
+    background: -webkit-linear-gradient(to bottom, #02719C, #14bdac); 
+    background: -webkit-gradient(linear, left top, left bottom, from(#02719C), to(#14bdac)); 
+    background: -webkit-linear-gradient(top, #02719C, #14bdac); 
+    background: -o-linear-gradient(top, #02719C, #14bdac); 
+    background: linear-gradient(to bottom, #02719C, #14bdac); 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1{
+    margin: 50px 0;
+    font-size: 100px;
+}
+.btn{
+    width: 200px;
+    height: 65px;
+    padding: 10px 40px;
+    border: 5px solid #fff;
+    border-radius: 8px;
+    outline: none;
+    font-size: 20px;  
+    font-weight: bold;
+    color: #fff;
+    background: #02719C;
+    cursor: pointer;
+}
+.container {
+    height: 100vh;
+    padding: 50px 0;
+    text-align: center;
+    overflow: hidden;
+}
+.fildGame{
+    transition: 0.8s;
+    opacity: 0;
+}
+.show{
+    opacity: 1;
+}
+.hide{
+    display: none;
+}
+.tic-tac-toe{
+    margin: 50px auto;
+    font-size: 30px;
+    border-collapse: collapse; 
+    color:#fff;
+
+}
+.tic-tac-toe td{
+    width: 50px;
+    height: 50px;
+    padding: 20px;
+    text-align: center;
+    cursor:pointer;
+}
+
+.tic-tac-toe tr:nth-child(2){
+    border-top: 5px solid #02719C;
+    border-bottom: 5px solid #02719C;
+}
+.tic-tac-toe tr:nth-child(1) td:nth-child(1),
+.tic-tac-toe tr:nth-child(1) td:nth-child(2),
+.tic-tac-toe tr:nth-child(2) td:nth-child(1),
+.tic-tac-toe tr:nth-child(2) td:nth-child(2),
+.tic-tac-toe tr:nth-child(3) td:nth-child(1),
+.tic-tac-toe tr:nth-child(3) td:nth-child(2){
+    border-right: 5px solid #02719C;
+}
+

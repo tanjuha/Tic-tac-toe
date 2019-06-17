@@ -1,0 +1,143 @@
+/* animation background  */
+
+@keyframes animation-background {
+    0% {
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: translateY(-100vh);
+        -ms-transform: translateY(-100vh);
+        transform: translateY(-100vh);
+        opacity: 0;
+    }
+}
+
+.animation-background { 
+    position: absolute;
+    width: 100%;
+    padding: 0;
+    color: #14bdac;
+    font-size: 20px;
+    font-weight: 700;
+    bottom: 0;
+    z-index: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.animation-background li:nth-child(1) {
+    -webkit-animation: animation-background 2s infinite linear;
+    animation: animation-background 2s infinite linear;
+}
+
+.animation-background li:nth-child(2) {
+    -webkit-animation: animation-background 9s infinite linear;
+    animation: animation-background 9s infinite linear;
+}
+
+.animation-background li:nth-child(3) {
+    -webkit-animation: animation-background 5s infinite linear;
+    animation: animation-background 5s infinite linear;
+}
+
+.animation-background li:nth-child(4) {
+    -webkit-animation: animation-background 10s infinite linear;
+    animation: animation-background 10s infinite linear;
+}
+
+.animation-background li:nth-child(5) {
+    -webkit-animation: animation-background 3s infinite linear;
+    animation: animation-background 3s infinite linear;
+}
+
+/* animation background  end */
+
+/* animation text */
+@keyframes animation-text {
+	0% {
+        background-position: 0%;	
+	}
+	50% {
+        background-position: 100%;	
+
+	}
+	100% {
+        background-position: 0%;
+	}
+}
+.animation-text{
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;	
+    background-image: url(../img/cloud.jpg);
+    background-color: #fff; 
+	background-size: auto;
+    background-position: 0%;
+    -webkit-animation: animation-text infinite 200s  linear;
+    animation: animation-text infinite 200s  linear;
+	
+}
+/* animation text end */
+
+/* animation btn */
+.animation-btn{
+    --color:#fff;
+    color: var(--color);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+.animation-btn span{
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: var(--color);
+    -webkit-transform: translateY(150%);
+        -ms-transform: translateY(150%);
+            transform: translateY(150%);
+    left: calc((var(--number) - 1) * 25%);
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    -webkit-transition-delay: calc((var(--number) - 1) * 0.1s);
+         -o-transition-delay: calc((var(--number) - 1) * 0.1s);
+            transition-delay: calc((var(--number) - 1) * 0.1s);
+    z-index: -1;
+}
+.animation-btn:hover {
+    color: #02719C;
+}
+
+.animation-btn:hover span {
+    -webkit-transform: translateY(0) scale(2);
+    -ms-transform: translateY(0) scale(2);
+        transform: translateY(0) scale(2);
+}
+
+.animation-btn span:nth-child(1) {
+    --number: 1;
+}
+
+.animation-btn span:nth-child(2) {
+    --number: 2;
+}
+
+.animation-btn span:nth-child(3) {
+    --number: 3;
+}
+
+.animation-btn span:nth-child(4) {
+    --number: 4;
+}
+/* animation btn end*/
